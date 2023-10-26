@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  
+  html,body{
+      background-color: rgb(17, 17, 17);
+      background-repeat: no-repeat;
+      /*permite deslizar cuando hago clicks en los links del nav */
+     scroll-behavior: smooth;
+     overflow-x: hidden;
+  }
+  
+  
+  
+  .container{
+     position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 99;
+  }
+  
+  
+  .header{
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      /*align-items: center;*/
+      padding: 15px  20px;
+      
+     
+  }
+  
+  
+  
+  .logo{
+  font-size: 17px;
+  color: #f3e0e0;
+  text-decoration:  none;
+  flex: 1;
+  top: 10px;
+  }
+  
+  
+  .logo span{
+      color:#114e4e
+  }
+  
+  
+  
+  .nav{
+      flex: 1;
+     justify-content: space-around;
+      width: 50%;
+      margin-left: auto; /* Esto empujará el menú hacia la derecha */
+     
+      
+  }
+  
+  
+  .nav a{
+      color: hwb(310 3% 56%);
+      text-decoration: none;
+      margin-right: 20px;
+      padding: 10px; /* Espaciado interno para los enlaces */
+      margin-top: 10px;
+      margin-left: auto; /* Esto empujará el menú hacia la derecha */
+      font-size: 16px;
+      
+  }
+  
+  .nav a:hover{
+      background-color: hwb(342 4% 51%);
+      color: #000000;
+  }
+  
+
+  .nav  .active{
+    color: #0f6146;
+ 
+ }
+ 
+ 
+ h1{
+     color:#0000ff;
+     font-size: 3em;
+ }
+ 
+ .download-cv{
+     padding: 10px  20px;
+      background-color: rgb(90, 5, 69);
+      border: none;
+      border-radius: 20px;
+      margin-top: 10px;
+      cursor:pointer;
+      box-shadow: 1px 3px  11px  -5px rgba(#ff0000, #005c80, blue, .69);
+ }
+ 
+ 
+ .download-cv:hover{
+     background-color:  hsl(197, 92%, 30%);
+     box-shadow: none;
+ }
+
+ .main{
+    margin:  0 auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr );
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+}
+
+
+.main img{
+    width: 300px;
+    border:7px  solid  hwb(330 16% 83%);;
+   height: 400px;
+
+}
+
+
+
+span{
+    color: hsl(320, 84%, 24%);
+}
+
+
+/*seccion del about*/
+.about-me {
+    background-color: hsl(0, 0%, 2%);
+    margin: 20px 0; /* Margen superior e inferior de 20px y 0 en los lados */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px;
+    width: 100%;/* Hacer que la sección ocupe todo el ancho */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos internos se ajusten al ancho de la sección */
+    justify-content: space-between; /* Distribuye los elementos internos a lo largo del ancho */
+}
+
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.profile-info {
+    flex: 2;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 24px;
+    color: hsl(0, 63%, 97%);
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about-text {
+    font-size: 18px;
+}
+
+.portfolio {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    margin: 0 0 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.33% - 20px); /* Ajusta el ancho para que haya tres columnas por fila, con margen entre ellas */
+    box-sizing: border-box; /* Evita que los márgenes afecten el ancho total */
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+form {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Media query para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav a {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .main img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+/* Media query para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav a {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .main img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+  
+}
+}
