@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,8 +36,10 @@
 <div id="home"></div>
 
 <main class="main">
+ 
     <div class="informacion-perfil">
-    <h1>I'M  <span>Bibiana</span>  Caicedo</h1>
+        <h1 id="nombreProfesion">I'M <span id="nombre"></span> <span id="profesion"></span></h1>
+
     <p>Soy un analista y desarrollador de software altamente motivado y apasionado
          por crear soluciones tecnológicas innovadoras. Con una sólida formación en informática y
           una amplia experiencia en desarrollo de software, estoy comprometido en la entrega de productos
@@ -45,50 +48,81 @@
            <button class="download-cv" >Download CV</button>
        </a>
        </div>
-       <img src="public/img/portada.jpg"  alt="bibianac">
+       <img src="public/img/2.webp"  alt="bibianac">
   </main>
-
 
   <div id="about-me"></div>
 
-    <section class="about-me">
-        <h2>About me</h2>
-        <div class="profile">
-            <div class="profile-image">
-              <img src="public/img/portada.jpg"  alt="bibianac">
-            </div>
-            <div class="profile-info">
-                <h3>[Tu Nombre]</h3>
-                <p>Desarrollador Web Front-End</p>
-                <p>Experto en HTML, CSS, JavaScript, y más.</p>
-                <p>Apasionado por la creación de experiencias web excepcionales y diseño de interfaz de usuario.</p>
-            </div>
-        </div>
-        <p class="about-text">Con más de [número de años] años de experiencia en la industria, mi objetivo es proporcionar soluciones web innovadoras y de alta calidad. He trabajado en una variedad de proyectos, desde sitios web corporativos hasta aplicaciones web interactivas. Mi enfoque se centra en la usabilidad, el rendimiento y la estética para crear experiencias digitales impactantes.</p>
-    </section>
+  <section class="about-me">
+      <h2>About me</h2>
+      <div class="profile">
+          <div class="profile-image">
+            <img src="public/img/2.webp"  alt="bibianac">
+          </div>
+          <div class="profile-info">
+              <h3 class="about">Bibiana Caicedo</h3>
+              <p>Desarrolladora Full Stack</p>
+              <p>Experta en: HTML, CSS,PHP,SQL, JavaScript, Node.js y más.</p>
+              <p>Apasionada por la creación de experiencias web excepcionales, desde el diseño atractivo de la interfaz de usuario hasta la implementación robusta del backend.</p>
+          </div>
+      </div>
+      <p class="about-text">Con más de 3 años de experiencia en la industria, mi objetivo es proporcionar soluciones web innovadoras y de alta calidad. He trabajado en una variedad de proyectos, desde sitios web corporativos hasta aplicaciones web interactivas. Mi enfoque se centra en la usabilidad, el rendimiento y la estética para crear experiencias digitales impactantes.</p>
+  </section>
   
 
-    <div id="portfolio"></div>
-    <section class="portfolio">
-      <h2>Mi Portafolio</h2>
-      <div class="portfolio-item">
-          <img src="proyecto1.jpg" alt="Proyecto 1">
-          <h3>Proyecto 1</h3>
-          <p>Descripción breve del proyecto 1.</p>
-      </div>
-      <div class="portfolio-item">
-          <img src="proyecto2.jpg" alt="Proyecto 2">
-          <h3>Proyecto 2</h3>
-          <p>Descripción breve del proyecto 2.</p>
-      </div>
-      <!-- Agrega más proyectos aquí -->
-  </section>
- 
+  <div id="portfolio"></div>
+  <section class="portfolio">
+    <h2>Mi Portafolio</h2>
+    <div class="portfolio-item">
+
+        <h3>Task-manager</h3>
+        <p>Este proyecto de administraion de tareas realizado el fronted con html,css y bootstrap 
+            y parte backend utilizacion de php y sql.Este proyecto busca que sea facil la forma de
+            gestionar tareas.Puedes revisar nuestro codigo aqui:<p>
+                Visita mi:
+                <a href="https://github.com/yennyviviana/task-manager" width="30" style="color: hwb(0 12% 25%);">Repositorio en GitHub</a>.</p>
+
+        </p>
+    </div>
+    <div class="portfolio-item">
+        <h3>Pedidos</h3>
+        
+        <p>Este un sistema de pedidos realizado con php nativo, html, css, sql y tiene 
+            algo de bootstrap.Puedes revisar nuestro codigo aqui:</p>Visita mi:
+            <a href="https://github.com/yennyviviana/pedidos" style="color: #a81414;">repositorio en GitHub</a>.</p>
+    </div>
+    <!-- Agrega más proyectos aquí -->
+    <div class="portfolio-item">
+        <h3>Agenda</h3>
+        <p>Este un sistema de pedidos realizado con php nativo, html, css, sql y tiene 
+            algo de bootstrap.Puedes revisar nuestro codigo aqui:<p>Visita mi:
+              <a href="https://github.com/yennyviviana/agenda_contactos" style="color: #b41624;">repositorio en GitHub</a>.</p>
+        </p>
+    </div>
+    <div class="portfolio-item">
+        <h3>Logica</h3>
+      
+        <p>Proyecto de algoritmo enseñado a diferentes estudiantes donde fortalezco la 
+            logica en php,js,python.</p>Visita mi:
+            <a href="https://github.com/yennyviviana/logica" style="color: #aa0a0a;">repositorio en GitHub</a>.</p>
+    </div>
+    <div class="portfolio-item">
+        <h3>Pedido</h3>
+        <p>Proyecto que busca mejorar y escalar el proyecto anterior sistemas de pedidos
+            Tambien utilizamos php y tecnologias fronted Html,Css, y JS.</p>Visita mi:
+            <a href="" style="color: #990f0f;">repositorio en GitHub</a>.</p>
+
+    </div>
+    
+</section>
+
+
+
 
   <div id="contact"></div>
   <section class="contact">
     
-    <form>
+    <form action="main.php" method="POST" onsubmit="return validateForm()">
       <h2>Contacto</h2>
         <div class="form-group">
             <label for="name">Nombre:</label>
@@ -106,6 +140,7 @@
     </form>
 </section>
 </div>
+
 
 <script src="public/js/script.js"></script>
 
